@@ -56,7 +56,7 @@ autocmd BufReadPost *
 " => Useful stuff
 """"""""""""""""""""""""""""""
 "copy to clipboard
-:nnoremap <leader>c :'<,'>w !xclip -i -selection clipboard,primary<cr>
+:nnoremap <leader>c :'<,'>w !cat > /dev/clipboard<cr>
 
 "remove ^M dos line endings
 :nnoremap <leader>m :%s///<cr>
