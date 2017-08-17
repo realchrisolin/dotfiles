@@ -18,7 +18,7 @@ if [ -f "${HOME}/.secretaliases" ]; then
     source "${HOME}/.secretaliases"
 fi
 
-# source and load the oh-my-zsh library
+# source and load antigen
 if [ ! -d ~/.antigen ]; then
     git clone https://github.com/zsh-users/antigen.git ~/.antigen
 fi
