@@ -1,3 +1,4 @@
 alias vi=/usr/bin/vim
 alias g=git
 alias t="task +work"
+alias w="curl wttr.in/rochester"
