@@ -185,6 +185,22 @@ function! AppendHeader()
 endfunction
 nnoremap <silent> <Leader>hd :call AppendHeader()<CR>
 
+function! AppendJekyllFrontMatter()
+    let l:line = line (".")
+    let l:line9 = append(l:line - 1, "<!--more-->")
+    let l:line8 = append(l:line - 1, "---")
+    let l:line7 = append(l:line - 1, "tags: ")
+    let l:line6 = append(l:line - 1, "- Uncategorized")
+    let l:line5 = append(l:line - 1, "categories:")
+    let l:line4 = printf("date: '%s'",
+                \ strftime("%Y-%m-%d %H:%M:%S %z"))
+    call append(l:line - 1, l:line4)
+    let l:line3 = append(l:line - 1, "title: ")
+    let l:line2 = append(l:line - 1, "layout: ")
+    let l:line1 = append(l:line - 1, "---")
+endfunction
+noremap <silent> <leader>fm :call AppendJekyllFrontMatter()<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""
 " => Filetype specific hacks
 """"""""""""""""""""""""""""""""""""""""""""""""
