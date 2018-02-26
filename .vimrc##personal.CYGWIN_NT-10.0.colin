@@ -164,7 +164,6 @@ function! AppendModeline()
     let l:modeline = substitute(l:modeline, "%s", l:modeline, "")
     let l:line = line (".")
     call append(l:line - 1, l:modeline)
-
 endfunction
 nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
 
@@ -183,8 +182,6 @@ function! AppendHeader()
 		call append(l:line - 1, l:line2)
 		let l:line1 = append(l:line - 1, "########################################################")
     let l:line2 = substitute(l:line2, "%s", l:line2, "")
-
-
 endfunction
 nnoremap <silent> <Leader>hd :call AppendHeader()<CR>
 
