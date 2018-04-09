@@ -1,7 +1,7 @@
 # vim:smd:ar:si:noet:bg=dark:sts=0:ts=4:sw=4:ft=zsh
 
 # use OMZ
-antigen-use oh-my-zsh
+antigen use oh-my-zsh
 
 # antigen bundles
 antigen bundles <<BUNDLES
@@ -9,6 +9,7 @@ colorize
 common-aliases
 command-not-found
 git
+gitfast
 git-extras
 git-flow
 httpie
