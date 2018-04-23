@@ -30,6 +30,9 @@ antigen init ~/.antigenrc
 # apply settings
 antigen apply
 
+# autoload colors
+autoload -U colors
+
 # set autosuggestions hotkey to ctrl+space
 bindkey '^ ' autosuggest-accept
 
